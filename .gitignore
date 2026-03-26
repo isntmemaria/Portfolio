@@ -1,0 +1,10 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor / OS
+.DS_Store
+*.lnk
+
+# Cursor (opcional — remova a linha abaixo se quiser versionar config local)
+.cursor/

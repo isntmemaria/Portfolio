@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8000ff" />
+      <stop offset="50%" stop-color="#e01cd5" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <!-- Lucide-like code icon: </> -->
+  <rect x="1" y="1" width="22" height="22" rx="6" fill="none" stroke="url(#g)" stroke-width="2" />
+  <path d="M9 18l-6-6 6-6" fill="none" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M15 6l6 6-6 6" fill="none" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M14 5l-4 14" fill="none" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+
