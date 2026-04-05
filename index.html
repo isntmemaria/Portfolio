@@ -2,20 +2,16 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Isabele Gonçalves — Portfólio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- tudo do site começa aqui -->
     <div class="page page--landing">
       <header class="top-bar">
+        <!-- botão pra mudar entre tema claro e escuro -->
         <button
           type="button"
           class="theme-toggle"
@@ -24,23 +20,17 @@
         >
           <span class="theme-toggle__track">
             <span class="theme-toggle__thumb" aria-hidden="true">
-              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   d="M14.2 2.65a.7.7 0 0 1 .72.93A8.35 8.35 0 1 0 20.4 15a.7.7 0 0 1 .94.73A9.75 9.75 0 1 1 14.2 2.65Z"
-                  fill="currentColor"
                 />
                 <path
                   d="M17.45 5.1l.38.96.96.38-.96.38-.38.96-.38-.96-.96-.38.96-.38.38-.96ZM19.55 9.05l.23.58.58.23-.58.23-.23.58-.23-.58-.58-.23.58-.23.23-.58Z"
-                  fill="currentColor"
-                  opacity="0.9"
                 />
               </svg>
-              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
                 <path
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
                   d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
                 />
               </svg>
@@ -48,19 +38,22 @@
           </span>
         </button>
       </header>
-
       <main class="landing">
+        <!-- abertura com meu nome -->
         <div class="main landing__intro">
           <section id="inicio" class="hero" aria-labelledby="headline">
             <p class="hero__name">ISABELE GONÇALVES —</p>
             <h1 class="hero__title" id="headline">
-              <span class="line">I TRANSFORM <span class="gradient">IDEAS</span></span>
-              <span class="line">INTO <span class="gradient">REALITY</span></span>
+              <span class="line">
+                I TRANSFORM <span class="gradient">IDEAS</span>
+              </span>
+              <span class="line">
+                INTO <span class="gradient">REALITY</span>
+              </span>
             </h1>
             <p class="hero__role">DESELVOLVEDORA JUNIOR 👩🏻‍💻</p>
             <a class="btn-projetos" href="#projetos">PROJETOS</a>
           </section>
-
           <aside class="side-dock" aria-label="Atalhos do site (menu)">
             <p class="side-dock__label">MENU</p>
             <button
@@ -76,18 +69,21 @@
           </aside>
         </div>
 
-        <section id="sobre" class="landing__section about" aria-labelledby="about-heading">
+        <!-- um pouco sobre mim -->
+        <section
+          id="sobre"
+          class="landing__section about"
+          aria-labelledby="about-heading"
+        >
           <div class="about__grid">
             <div class="about__text">
               <h2 class="about__heading" id="about-heading">
                 Olá! Sou a <span class="about__name">Isabele</span>. 👋
               </h2>
               <p class="about__body">
-                Estou cursando Sistemas para Internet<br />
-                na UNCISAL e vivendo o desafio de ser<br />
-                desenvolvedora. Adoro unir design e<br />
-                código para dar vida a projetos<br />
-                que façam sentido.
+                Estou cursando Sistemas para Internet<br />na UNCISAL e vivendo
+                o desafio de ser<br />desenvolvedora. Adoro unir design e<br />código
+                para dar vida a projetos<br />que façam sentido.
               </p>
             </div>
             <figure class="about__figure">
@@ -96,8 +92,6 @@
                 <img
                   class="about__photo"
                   src="IMG/EU.jpeg"
-                  width="400"
-                  height="400"
                   alt="Retrato de Isabele Gonçalves"
                 />
               </div>
@@ -105,113 +99,34 @@
           </div>
         </section>
 
-        <section id="projetos" class="landing__section section-projetos" aria-label="Projetos em que código e design trabalham juntos para criar experiências úteis e bonitas.">
-          <p id="projetos-lead" class="section-projetos__lead">
-            <span class="project-brand">PROJETOS</span> EM QUE CÓDIGO E DESIGN TRABALHAM JUNTOS PARA CRIAR EXPERIÊNCIAS ÚTEIS E BONITAS.
-          </p>
-
-          <article class="project-showcase" aria-labelledby="unitimer-title">
-            <h3 id="unitimer-title" class="visually-hidden">Uni.Timer</h3>
-            <div class="project-showcase__tech" aria-label="Tecnologias: HTML, CSS e JavaScript">
-              <span class="project-tech__icon" title="HTML">
-                <img
-                  src="IMG/html.png"
-                  data-dark-src="IMG/html.png"
-                  data-light-src="IMG/htmlpreto.png"
-                  alt="HTML"
-                  width="52"
-                  height="52"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </span>
-              <span class="project-tech__icon project-tech__icon--css" title="CSS3">
-                <img
-                  src="IMG/css.png"
-                  data-dark-src="IMG/css.png"
-                  data-light-src="IMG/csspreto.png"
-                  alt="CSS"
-                  width="52"
-                  height="52"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </span>
-              <span class="project-tech__icon" title="JavaScript">
-                <img
-                  src="IMG/js.png"
-                  data-dark-src="IMG/js.png"
-                  data-light-src="IMG/jspreto.png"
-                  alt="JavaScript"
-                  width="52"
-                  height="52"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </span>
-            </div>
-            <div class="project-showcase__card">
-              <a
-                class="project-card__link"
-                href="https://luxury-sunburst-1a50d6.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Abrir Uni.Timer no site"
-              >
-                <div class="project-card__frame">
-                  <img
-                    src="IMG/UNITIME.jpeg"
-                    width="720"
-                    height="480"
-                    alt="Uni.Timer — tela com o título Uni.Timer, texto Preparando seu foco e indicador de carregamento"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div class="project-card__overlay" aria-live="polite">
-                    <div class="project-card__overlay-inner">
-                      <p class="project-card__overlay-text">
-                        O Uni.Timer é basicamente um cronômetro focado em estudo. Em vez de usar um relógio
-                        comum, ele é pensado para organizar o tempo que você gasta em cada matéria ou tarefa da
-                        faculdade.
-                      </p>
-                      <p class="project-card__overlay-subtitle">A ideia é simples:</p>
-                      <ol class="project-card__overlay-list">
-                        <li>
-                          <strong>Você escolhe o que vai estudar:</strong> Separa a matéria ou o trabalho que
-                          precisa fazer.
-                        </li>
-                        <li>
-                          <strong>Define um tempo:</strong> Coloca um bloco de tempo (ex: 40 ou 50 minutos) para focar
-                          apenas naquilo.
-                        </li>
-                        <li>
-                          <strong>Elimina distrações:</strong> Como é uma ferramenta dedicada, você evita ficar
-                          checando outras coisas no celular ou computador enquanto o tempo está correndo.
-                        </li>
-                        <li>
-                          <strong>Pausa:</strong> Quando o tempo acaba, ele te avisa para dar uma pausa antes de
-                          começar o próximo bloco.
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="project-card__hint"
-                  aria-hidden="true"
-                  data-text="Clique na tela para visualizar o projeto"
-                >
-                  Clique na tela para visualizar o projeto
-                </div>
-              </a>
-            </div>
-          </article>
+        <!-- projetos - por enquanto só loading -->
+        <section
+          id="projetos"
+          class="landing__section section-projetos"
+          aria-label="Projetos"
+        >
+          <div
+            class="section-projetos-loading"
+            role="status"
+            aria-live="polite"
+          >
+            <span class="section-projetos-spinner" aria-hidden="true"></span>
+            <p class="section-projetos-msg">Projetos em desenvolvimento…</p>
+          </div>
         </section>
 
-        <section id="contato" class="landing__section section-contato" aria-label="Contato">
+        <!-- redes pra me achar -->
+        <section
+          id="contato"
+          class="landing__section section-contato"
+          aria-label="Contato"
+        >
           <h2 class="section-contato__title">CONTATO</h2>
-
-          <div class="contact-icons" role="group" aria-label="Ícones de contato">
+          <div
+            class="contact-icons"
+            role="group"
+            aria-label="Ícones de contato"
+          >
             <a
               class="contact-icon"
               aria-label="WhatsApp"
@@ -219,13 +134,16 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
                 <path
                   d="M12.04 2C6.54 2 2.1 6.35 2.1 11.72c0 1.72.46 3.4 1.33 4.88L2 22l5.56-1.72c1.43.78 3.05 1.2 4.71 1.2 5.5 0 9.94-4.35 9.94-9.72C22.21 6.35 17.54 2 12.04 2Zm0 17.85c-1.52 0-2.99-.42-4.26-1.22l-.3-.18-3.3 1.02 1.06-3.15-.2-.31a7.84 7.84 0 0 1-1.23-4.29c0-4.35 3.65-7.88 8.23-7.88 4.58 0 8.23 3.53 8.23 7.88 0 4.35-3.65 7.88-8.23 7.88Zm4.78-5.64c-.26-.13-1.54-.75-1.78-.84-.24-.09-.41-.13-.58.13-.17.26-.67.84-.82 1.01-.15.17-.3.2-.56.07-.26-.13-1.09-.4-2.08-1.28-.77-.67-1.3-1.5-1.45-1.76-.15-.26-.02-.4.11-.53.11-.11.26-.29.39-.44.13-.15.17-.26.26-.44.09-.17.04-.33-.02-.46-.06-.13-.58-1.36-.79-1.86-.21-.5-.43-.43-.58-.44h-.5c-.17 0-.43.07-.65.33-.22.26-.86.84-.86 2.05 0 1.21.89 2.38 1.02 2.55.13.17 1.75 2.74 4.3 3.74.61.24 1.08.38 1.45.48.61.19 1.17.16 1.61.1.49-.07 1.54-.62 1.76-1.22.22-.6.22-1.11.15-1.22-.06-.11-.24-.17-.5-.31Z"
                 />
               </svg>
             </a>
-
             <a
               class="contact-icon"
               aria-label="GitHub"
@@ -233,15 +151,17 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg
+                class="contact-icon__svg-github"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
                 <path
                   d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.85 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.79.62-3.38-1.38-3.38-1.38-.46-1.18-1.12-1.5-1.12-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.13.39-2.06 1.03-2.78-.1-.26-.45-1.33.1-2.77 0 0 .84-.28 2.75 1.06.8-.23 1.66-.35 2.52-.35.86 0 1.72.12 2.52.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.44.2 2.5.1 2.77.64.72 1.03 1.65 1.03 2.78 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.83 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"
-                  fill="currentColor"
-                  opacity="0.95"
                 />
               </svg>
             </a>
-
             <a
               class="contact-icon"
               aria-label="LinkedIn"
@@ -249,28 +169,56 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M4 3.5C4 2.67 4.67 2 5.5 2S7 2.67 7 3.5 6.33 5 5.5 5 4 4.33 4 3.5Z" />
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 3.5C4 2.67 4.67 2 5.5 2S7 2.67 7 3.5 6.33 5 5.5 5 4 4.33 4 3.5Z"
+                />
                 <path d="M4 8h3v13H4V8Z" />
-                <path d="M10 8h3v1.6h.04c.42-.8 1.45-1.65 2.98-1.65 3.18 0 3.77 2.08 3.77 4.78V21h-3v-6.1c0-1.45-.03-3.31-2.02-3.31-2.02 0-2.33 1.58-2.33 3.2V21h-3V8Z" />
+                <path
+                  d="M10 8h3v1.6h.04c.42-.8 1.45-1.65 2.98-1.65 3.18 0 3.77 2.08 3.77 4.78V21h-3v-6.1c0-1.45-.03-3.31-2.02-3.31-2.02 0-2.33 1.58-2.33 3.2V21h-3V8Z"
+                />
               </svg>
             </a>
           </div>
-
           <p class="section-contato__note">
-            <span class="contact-emphasis">Ah, e se você chegou até aqui</span>, é porque nossas visões se alinharam!
-            Espero que tenha gostado de conhecer os projetos que construí com tanto cuidado. Meu foco é sempre unir
-            <span class="contact-emphasis">funcionalidade e design</span> para resolver problemas reais. 🙂
+            <span class="contact-emphasis">Ah, e se você chegou até aqui</span>,
+            é porque nossas visões se alinharam! Espero que tenha gostado de
+            conhecer os projetos que construí com tanto cuidado. Meu foco é
+            sempre unir
+            <span class="contact-emphasis">funcionalidade e design</span> para
+            resolver problemas reais. 🙂
           </p>
         </section>
       </main>
     </div>
 
-    <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
-      <button type="button" class="nav-drawer__backdrop" id="menu-backdrop" aria-label="Fechar menu"></button>
+    <!-- menu que desliza quando clica no MENU -->
+    <div
+      class="nav-drawer"
+      id="nav-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="drawer-title"
+      hidden
+    >
+      <button
+        type="button"
+        class="nav-drawer__backdrop"
+        id="menu-backdrop"
+        aria-label="Fechar menu"
+      ></button>
       <div class="nav-drawer__panel">
         <h2 id="drawer-title" class="visually-hidden">Atalhos para seções</h2>
-        <button type="button" class="nav-drawer__close" id="menu-close" aria-label="Fechar">
+        <button
+          type="button"
+          class="nav-drawer__close"
+          id="menu-close"
+          aria-label="Fechar"
+        >
           ×
         </button>
         <ul class="nav-drawer__list">
@@ -282,29 +230,32 @@
       </div>
     </div>
 
+    <!-- efeito extra no mouse (no celular o script tira isso) -->
     <div id="cursor-follow" class="cursor-follow" aria-hidden="true">
       <div class="cursor-follow__orbit">
-        <svg class="cursor-follow__svg" viewBox="0 0 100 100" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          class="cursor-follow__svg"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <defs>
-            <linearGradient id="cursor-name-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#8000ff" />
-              <stop offset="50%" stop-color="#e01cd5" />
-              <stop offset="100%" stop-color="#a855f7" />
+            <linearGradient
+              id="cursor-name-gradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="0%"
+            >
+              <stop offset="0%" />
+              <stop offset="50%" />
+              <stop offset="100%" />
             </linearGradient>
             <path
               id="cursor-orbit-path"
               d="M 50 15 a 35 35 0 1 1 0 70 a 35 35 0 1 1 0 -70"
-              fill="none"
             />
           </defs>
-          <text
-            class="cursor-follow__text"
-            fill="url(#cursor-name-gradient)"
-            font-family="Arimo, system-ui, sans-serif"
-            font-size="5.2"
-            font-weight="700"
-            letter-spacing="0.12em"
-          >
+          <text class="cursor-follow__text">
             <textPath href="#cursor-orbit-path" startOffset="0%">
               ISABELE GONÇALVES • ISABELE GONÇALVES • ISABELE GONÇALVES •
             </textPath>
@@ -314,119 +265,6 @@
       <span class="cursor-follow__core"></span>
     </div>
 
-    <script>
-      (function () {
-        var root = document.documentElement;
-        var stored = localStorage.getItem("theme");
-        if (stored === "light" || stored === "dark") {
-          root.setAttribute("data-theme", stored);
-        } else {
-          root.setAttribute("data-theme", "dark");
-        }
-
-        function syncThemeIcons() {
-          var isLight = root.getAttribute("data-theme") === "light";
-          var moon = document.querySelector(".icon-moon");
-          var sun = document.querySelector(".icon-sun");
-          if (moon && sun) {
-            moon.style.display = isLight ? "none" : "block";
-            sun.style.display = isLight ? "block" : "none";
-          }
-
-          var techIcons = document.querySelectorAll(".project-tech__icon img[data-dark-src][data-light-src]");
-          techIcons.forEach(function (img) {
-            var darkSrc = img.getAttribute("data-dark-src");
-            var lightSrc = img.getAttribute("data-light-src");
-            var targetSrc = isLight ? lightSrc : darkSrc;
-            if (!targetSrc) return;
-            if (img.getAttribute("src") === targetSrc) return;
-
-            var probe = new Image();
-            probe.onload = function () {
-              img.setAttribute("src", targetSrc);
-            };
-            probe.onerror = function () {
-              img.setAttribute("src", darkSrc || targetSrc);
-            };
-            probe.src = targetSrc;
-          });
-        }
-
-        syncThemeIcons();
-
-        var themeBtn = document.getElementById("theme-toggle");
-        if (themeBtn) {
-          themeBtn.addEventListener("click", function () {
-            var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
-            root.setAttribute("data-theme", next);
-            localStorage.setItem("theme", next);
-            syncThemeIcons();
-          });
-        }
-
-        var drawer = document.getElementById("nav-drawer");
-        var openBtn = document.getElementById("menu-open");
-        var closeBtn = document.getElementById("menu-close");
-        var backdrop = document.getElementById("menu-backdrop");
-
-        function setOpen(open) {
-          if (!drawer || !openBtn) return;
-          drawer.hidden = !open;
-          drawer.classList.toggle("is-open", open);
-          openBtn.setAttribute("aria-expanded", open ? "true" : "false");
-          document.body.style.overflow = open ? "hidden" : "";
-        }
-
-        if (openBtn) {
-          openBtn.addEventListener("click", function () {
-            setOpen(true);
-          });
-        }
-        if (closeBtn) {
-          closeBtn.addEventListener("click", function () {
-            setOpen(false);
-          });
-        }
-        if (backdrop) {
-          backdrop.addEventListener("click", function () {
-            setOpen(false);
-          });
-        }
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape") setOpen(false);
-        });
-
-        document.querySelectorAll(".nav-drawer__list a[href^='#']").forEach(function (link) {
-          link.addEventListener("click", function () {
-            setOpen(false);
-          });
-        });
-      })();
-
-      (function () {
-        var el = document.getElementById("cursor-follow");
-        if (!el) return;
-        var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        var finePointer = window.matchMedia("(pointer: fine)").matches;
-        if (reduceMotion || !finePointer) {
-          el.remove();
-          return;
-        }
-        document.documentElement.classList.add("has-custom-cursor");
-        el.classList.add("cursor-follow--hidden");
-        function move(e) {
-          el.style.left = e.clientX + "px";
-          el.style.top = e.clientY + "px";
-          el.classList.remove("cursor-follow--hidden");
-        }
-        window.addEventListener("mousemove", move, { passive: true });
-        document.documentElement.addEventListener("mouseleave", function () {
-          el.classList.add("cursor-follow--hidden");
-        });
-        document.documentElement.addEventListener("mouseenter", function () {
-          el.classList.remove("cursor-follow--hidden");
-        });
-      })();
-    </script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
