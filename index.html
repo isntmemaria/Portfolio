@@ -8,38 +8,53 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- tudo do site começa aqui -->
+    <!-- portfolio isabele -->
     <div class="page page--landing">
       <header class="top-bar">
-        <!-- botão pra mudar entre tema claro e escuro -->
-        <button
-          type="button"
-          class="theme-toggle"
-          id="theme-toggle"
-          aria-label="Alternar entre tema claro e escuro"
+        <div
+          class="top-bar__actions"
+          data-i18n-aria="top_bar_aria"
+          aria-label="Preferências da página"
         >
-          <span class="theme-toggle__track">
-            <span class="theme-toggle__thumb" aria-hidden="true">
-              <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M14.2 2.65a.7.7 0 0 1 .72.93A8.35 8.35 0 1 0 20.4 15a.7.7 0 0 1 .94.73A9.75 9.75 0 1 1 14.2 2.65Z"
-                />
-                <path
-                  d="M17.45 5.1l.38.96.96.38-.96.38-.38.96-.38-.96-.96-.38.96-.38.38-.96ZM19.55 9.05l.23.58.58.23-.58.23-.23.58-.23-.58-.58-.23.58-.23.23-.58Z"
-                />
-              </svg>
-              <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="4" />
-                <path
-                  d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
-                />
-              </svg>
+          <!-- tema -->
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            data-i18n-aria="theme_aria"
+            aria-label="Alternar entre tema claro e escuro"
+          >
+            <span class="theme-toggle__track">
+              <span class="theme-toggle__thumb" aria-hidden="true">
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14.2 2.65a.7.7 0 0 1 .72.93A8.35 8.35 0 1 0 20.4 15a.7.7 0 0 1 .94.73A9.75 9.75 0 1 1 14.2 2.65Z"
+                  />
+                  <path
+                    d="M17.45 5.1l.38.96.96.38-.96.38-.38.96-.38-.96-.96-.38.96-.38.38-.96ZM19.55 9.05l.23.58.58.23-.58.23-.23.58-.23-.58-.58-.23.58-.23.23-.58Z"
+                  />
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4" />
+                  <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+                  />
+                </svg>
+              </span>
             </span>
-          </span>
-        </button>
+          </button>
+          <button
+            type="button"
+            class="lang-toggle"
+            id="lang-toggle"
+            aria-label="Switch language to English"
+          >
+            <span class="lang-toggle__label" aria-hidden="true">EN</span>
+          </button>
+        </div>
       </header>
       <main class="landing">
-        <!-- abertura com meu nome -->
+        <!-- inicio -->
         <div class="main landing__intro">
           <section id="inicio" class="hero" aria-labelledby="headline">
             <p class="hero__name">ISABELE GONÇALVES —</p>
@@ -51,17 +66,24 @@
                 INTO <span class="gradient">REALITY</span>
               </span>
             </h1>
-            <p class="hero__role">DESELVOLVEDORA JUNIOR 👩🏻‍💻</p>
-            <a class="btn-projetos" href="#projetos">PROJETOS</a>
+            <p class="hero__role" data-i18n="hero_role">
+              DESENVOLVEDORA JUNIOR 👩🏻‍💻
+            </p>
+            <a class="btn-projetos" href="#projetos" data-i18n="btn_projects">PROJETOS</a>
           </section>
-          <aside class="side-dock" aria-label="Atalhos do site (menu)">
-            <p class="side-dock__label">MENU</p>
+          <aside
+            class="side-dock"
+            data-i18n-aria="dock_aria"
+            aria-label="Atalhos do site (menu)"
+          >
+            <p class="side-dock__label" data-i18n="menu_label">MENU</p>
             <button
               type="button"
               class="menu-trigger"
               id="menu-open"
               aria-controls="nav-drawer"
               aria-expanded="false"
+              data-i18n-aria="menu_open_aria"
               aria-label="Abrir atalhos para seções da página"
             >
               <span></span><span></span><span></span><span></span>
@@ -69,7 +91,7 @@
           </aside>
         </div>
 
-        <!-- um pouco sobre mim -->
+        <!-- sobre -->
         <section
           id="sobre"
           class="landing__section about"
@@ -77,10 +99,10 @@
         >
           <div class="about__grid">
             <div class="about__text">
-              <h2 class="about__heading" id="about-heading">
+              <h2 class="about__heading" id="about-heading" data-i18n-html="about_heading">
                 Olá! Sou a <span class="about__name">Isabele</span>. 👋
               </h2>
-              <p class="about__body">
+              <p class="about__body" data-i18n-html="about_body">
                 Estou cursando Sistemas para Internet<br />na UNCISAL e vivendo
                 o desafio de ser<br />desenvolvedora. Adoro unir design e<br />código
                 para dar vida a projetos<br />que façam sentido.
@@ -93,43 +115,100 @@
                   class="about__photo"
                   src="IMG/EU.jpeg"
                   alt="Retrato de Isabele Gonçalves"
+                  data-i18n-alt="photo_alt"
                 />
               </div>
             </figure>
           </div>
         </section>
 
-        <!-- projetos - por enquanto só loading -->
+        <!-- projetos -->
         <section
           id="projetos"
           class="landing__section section-projetos"
-          aria-label="Projetos"
+          aria-labelledby="projetos-heading"
         >
-          <div
-            class="section-projetos-loading"
-            role="status"
-            aria-live="polite"
-          >
-            <span class="section-projetos-spinner" aria-hidden="true"></span>
-            <p class="section-projetos-msg">Projetos em desenvolvimento…</p>
+          <div class="section-projetos__inner">
+            <h2
+              class="section-projetos__title"
+              id="projetos-heading"
+              data-i18n="projetos_title"
+            >
+              PROJETOS
+            </h2>
+            <ul class="projeto-list">
+              <li>
+                <a
+                  class="projeto-card"
+                  href="https://mind-scale.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="projeto-card__badge" data-i18n="mind_badge"
+                    >Primeiro projeto finalizado</span
+                  >
+                  <h3 class="projeto-card__name">MindScale</h3>
+                  <p class="projeto-card__desc" data-i18n="mind_desc">
+                    Para quando a cabeça gira em loop numa decisão difícil, o
+                    MindScale organiza o ruído em etapas: dois lados, prós e
+                    contras, consequências na hora e depois, e por fim a
+                    conclusão. Ideia próxima do que psicólogas costumam conduzir em
+                    sessão, acessível a qualquer pessoa. Pausa e reflexão, não
+                    produtividade. Desenvolvido em HTML, CSS e JavaScript puro,
+                    sem frameworks nem libs de interface, com o básico bem
+                    cuidado na experiência.
+                  </p>
+                  <span class="projeto-card__url" aria-hidden="true"
+                    >mind-scale.vercel.app →</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="projeto-card"
+                  href="https://drayasmingoncalves.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="projeto-card__badge" data-i18n="yas_badge"
+                    >Landing page em desenvolvimento</span
+                  >
+                  <h3 class="projeto-card__name">Dra. Yasmin Gonçalves</h3>
+                  <p class="projeto-card__desc" data-i18n="yas_desc">
+                    Landing da Dra. Yasmin Gonçalves, harmonização orofacial em
+                    Maceió: o site ainda está em desenvolvimento. Desenvolvido em
+                    HTML, CSS e JavaScript: blocos de
+                    apresentação, serviços, depoimentos, FAQ e contato, com foco em
+                    deixar a leitura leve e o próximo passo óbvio para quem chega
+                    buscando mais confiança no próprio rosto.
+                  </p>
+                  <span class="projeto-card__url" aria-hidden="true"
+                    >drayasmingoncalves.netlify.app →</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
 
-        <!-- redes pra me achar -->
+        <!-- contato -->
         <section
           id="contato"
           class="landing__section section-contato"
+          data-i18n-aria="contato_aria"
           aria-label="Contato"
         >
-          <h2 class="section-contato__title">CONTATO</h2>
+          <h2 class="section-contato__title" data-i18n="contato_title">
+            CONTATO
+          </h2>
           <div
             class="contact-icons"
             role="group"
+            data-i18n-aria="contact_group_aria"
             aria-label="Ícones de contato"
           >
             <a
               class="contact-icon"
               aria-label="WhatsApp"
+              data-i18n-aria="wa_aria"
               href="https://wa.me/5582987012099"
               target="_blank"
               rel="noopener noreferrer"
@@ -147,6 +226,7 @@
             <a
               class="contact-icon"
               aria-label="GitHub"
+              data-i18n-aria="gh_aria"
               href="https://github.com/isntmemaria"
               target="_blank"
               rel="noopener noreferrer"
@@ -165,6 +245,7 @@
             <a
               class="contact-icon"
               aria-label="LinkedIn"
+              data-i18n-aria="li_aria"
               href="https://www.linkedin.com/in/isntmemaria"
               target="_blank"
               rel="noopener noreferrer"
@@ -184,7 +265,7 @@
               </svg>
             </a>
           </div>
-          <p class="section-contato__note">
+          <p class="section-contato__note" data-i18n-html="contact_note">
             <span class="contact-emphasis">Ah, e se você chegou até aqui</span>,
             é porque nossas visões se alinharam! Espero que tenha gostado de
             conhecer os projetos que construí com tanto cuidado. Meu foco é
@@ -196,7 +277,7 @@
       </main>
     </div>
 
-    <!-- menu que desliza quando clica no MENU -->
+    <!-- menu -->
     <div
       class="nav-drawer"
       id="nav-drawer"
@@ -209,28 +290,40 @@
         type="button"
         class="nav-drawer__backdrop"
         id="menu-backdrop"
+        data-i18n-aria="backdrop_aria"
         aria-label="Fechar menu"
       ></button>
       <div class="nav-drawer__panel">
-        <h2 id="drawer-title" class="visually-hidden">Atalhos para seções</h2>
+        <h2 id="drawer-title" class="visually-hidden" data-i18n="drawer_title">
+          Atalhos para seções
+        </h2>
         <button
           type="button"
           class="nav-drawer__close"
           id="menu-close"
+          data-i18n-aria="close_aria"
           aria-label="Fechar"
         >
           ×
         </button>
         <ul class="nav-drawer__list">
-          <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#sobre">SOBRE</a></li>
-          <li><a href="#projetos">PROJETOS</a></li>
-          <li><a href="#contato">CONTATO</a></li>
+          <li>
+            <a href="#inicio" data-i18n="nav_inicio">INICIO</a>
+          </li>
+          <li>
+            <a href="#sobre" data-i18n="nav_sobre">SOBRE</a>
+          </li>
+          <li>
+            <a href="#projetos" data-i18n="nav_projetos">PROJETOS</a>
+          </li>
+          <li>
+            <a href="#contato" data-i18n="nav_contato">CONTATO</a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <!-- efeito extra no mouse (no celular o script tira isso) -->
+    <!-- cursor -->
     <div id="cursor-follow" class="cursor-follow" aria-hidden="true">
       <div class="cursor-follow__orbit">
         <svg
