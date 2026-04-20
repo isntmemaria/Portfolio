@@ -160,10 +160,18 @@ body {
     padding-right: 0;
     position: relative;
     padding-top: clamp(4.25rem, 16vh, 10rem);
+    min-height: auto;
+    padding-bottom: clamp(1.25rem, 4vh, 2.25rem);
+  }
+  .landing__section.about {
+    padding-block: clamp(2.25rem, 7vh, 4.5rem) clamp(3.5rem, 10vh, 6.5rem);
+  }
+  .landing__section.section-projetos {
+    padding-block: clamp(2.5rem, 8vh, 5rem) clamp(3.5rem, 10vh, 6.5rem);
   }
   .main.landing__intro .hero {
-    /* Evita sobreposição com o MENU fixo (círculo) no canto superior esquerdo */
-    padding-inline-start: max(4.15rem, 18vw);
+    /* Só o necessário após o padding da página: largura do círculo (~3.35rem) + folga mínima */
+    padding-inline-start: clamp(2.85rem, 2.45rem + 1.5vw, 3.2rem);
     min-width: 0;
     max-width: 100%;
     overflow-wrap: break-word;
@@ -222,6 +230,9 @@ body {
   }
   .hero__title .line {
     white-space: normal;
+  }
+  .hero__title-cluster {
+    white-space: nowrap;
   }
 }
 .about__name,
