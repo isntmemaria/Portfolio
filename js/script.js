@@ -277,7 +277,7 @@ if (botaoLang != null) {
   });
 }
 
-// ----- CURSOR QUE SEGUE O MOUSE (só no desktop) -----
+// ----- CURSOR QUE SEGUE O MOUSE  -----
 var cursor = document.getElementById("cursor-follow");
 if (cursor != null) {
   var prefereMenosAnimacao = window.matchMedia(
