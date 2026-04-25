@@ -643,9 +643,10 @@ body {
 .section-contato__title,
 .section-projetos__title {
   color: transparent;
-  background: var(--gradient-text-contact);
+  background: linear-gradient(110deg, #7c3aed 0%, #a855f7 35%, #e01cd5 70%, #ff4fd8 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-contato__title,
 .section-projetos__title {
